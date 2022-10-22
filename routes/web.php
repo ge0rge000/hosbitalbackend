@@ -22,7 +22,7 @@ Route::middleware(['auth:sanctum','verified'])->group(function () {
     //appoint
     Route::get('/reverseappointment',ReveseAppointment::class)->name('reverse_user');
     ///sensors
-    Route::get('/sensorsreading',SensorReadingComponent::class)->name('sensorread');
+    Route::get('/sensorsreeading',SensorReadingComponent::class)->name('sensorread');
 
     Route::get('/sensorsreading/{sensoride}',SelectSpecifiyComponent::class)->name('sensorreadspecifiy');
 
