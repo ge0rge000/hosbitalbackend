@@ -15,7 +15,7 @@ class PatientSensorReadings extends Controller
         $validator =   $this->validate($request,[
             'sensor_id' => 'required',
             'patient_id' => 'required',
-        
+            'first_read' => 'required',
         ]);
 
             $sensorread=new SensorReading;
