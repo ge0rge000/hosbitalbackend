@@ -18,9 +18,6 @@ class SuperAdmin
     {
         if(session("usertype")==="Super"){
             return $next($request);
-        }else{
-            session()->flush();
-            return redirect()->route('login');
         }
         return $next($request);
     }
