@@ -33,7 +33,7 @@ class User extends Authenticatable
         'device_id'
     ];
 
- 
+
 
     /**
      * The accessors to append to the model's array form.
@@ -44,4 +44,9 @@ class User extends Authenticatable
         'profile_photo_url',
     ];
 
+
+    public function doctor()
+    {
+        return $this->hasOne(Doctor::class,'doctor_id');
+    }
 }

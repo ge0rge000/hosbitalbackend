@@ -11,7 +11,7 @@ class AuthController extends Controller
 {
     //register
     public function register(Request $req){
-        
+
         $messages = [
             'unique' => 'انت مسجل من قبل',
           ];
@@ -64,14 +64,14 @@ class AuthController extends Controller
              'data'=> null]
         ,200);
       }
-      if(!$device){
-        return response(
-            ['message'=>'استخدم الجهاز المسجل بالنظام',
-             'status'=> false,
-             'data'=> null]
-        ,200);
+    //   if(!$device){
+    //     return response(
+    //         ['message'=>'استخدم الجهاز المسجل بالنظام',
+    //          'status'=> false,
+    //          'data'=> null]
+    //     ,200);
 
-      }
+    //   }
         $token=$user->createToken('myapptoken')->plainTextToken;
 
         return response(

@@ -11,7 +11,5 @@ class SensorsController extends Controller
         public function sesnsor(){
 
             $sensors=Sensor::all();
-
-            return $sensors;
         }
 }

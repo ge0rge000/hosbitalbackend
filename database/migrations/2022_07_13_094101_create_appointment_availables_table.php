@@ -21,6 +21,7 @@ class CreateAppointmentAvailablesTable extends Migration
             $table->date('date_avail_to');
             $table->string('time_avail_from');
             $table->string('time_avail_to');
+            $table->string('time_meeting');
             $table->string('price_reverse');
             $table->string('price_try');
             $table->string('comment');
