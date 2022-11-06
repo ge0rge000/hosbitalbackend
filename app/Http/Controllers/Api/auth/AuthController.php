@@ -88,7 +88,6 @@ public function logout(Request $req){
     if ($req->user()) {
         $req->user()->tokens()->delete();
     }
-
     return response()->json(['message' => 'logout'], 200);
 }
 

@@ -13,4 +13,9 @@ class SensorsController extends Controller
             $sensors=Sensor::all();
             return $sensors;
         }
+        public function getspecificsesnsor($idsensor){
+
+            $sensors=Sensor::where('id',$idsensor)->first();
+            return $sensors;
+        }
 }

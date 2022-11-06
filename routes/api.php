@@ -19,8 +19,8 @@ Route::post('logout',[AuthController::class,'logout']);
 
 
 
-Route::post('/sensorread',[PatientSensorReadings::class,'storereadsensor']);
 Route::get('/sensors',[SensorsController::class,'sesnsor']);
+Route::get('/sensors/{idsensor}',[SensorsController::class,'getspecificsesnsor']);
 
 
 
